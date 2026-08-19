@@ -1,6 +1,6 @@
 spring:
   application:
-   name: spring-boot-rest-api
+    name: spring-boot-rest-api
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/my_first_database?useTimeZone=true&serverTimeZone=UTC
@@ -8,10 +8,14 @@ spring:
     password: MyNewPass
   jpa:
     hibernate:
-     ddl-auto: update
+      ddl-auto: update
     properties:
       hibernate:
-#        dialect: org.hibernate.dialect.MySQLDialect
       show-sql: false
+    open-in-view: false
 
-      open-in-view: false
+# O 'logging' deve ficar aqui, totalmente à esquerda!
+logging:
+  level:
+    root: WARN
+    br.com.oopisani: DEBUG
