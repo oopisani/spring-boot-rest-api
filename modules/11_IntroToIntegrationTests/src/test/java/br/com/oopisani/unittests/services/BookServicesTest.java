@@ -1,14 +1,10 @@
-package br.com.oopisani.services;
+package br.com.oopisani.unittests.services;
 
 import br.com.oopisani.data.dto.BookDTO;
-import br.com.oopisani.data.dto.PersonDTO;
 import br.com.oopisani.exception.RequiredObjectIsNullException;
 import br.com.oopisani.model.Book;
-import br.com.oopisani.model.Person;
 import br.com.oopisani.repository.BookRepository;
-import br.com.oopisani.repository.PersonRepository;
-import br.com.oopisani.unitetests.mapper.mocks.MockBook;
-import br.com.oopisani.unitetests.mapper.mocks.MockPerson;
+import br.com.oopisani.unittests.mapper.mocks.MockBook;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

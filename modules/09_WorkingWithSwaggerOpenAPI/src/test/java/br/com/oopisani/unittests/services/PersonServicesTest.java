@@ -4,14 +4,13 @@ import br.com.oopisani.data.dto.PersonDTO;
 import br.com.oopisani.exception.RequiredObjectIsNullException;
 import br.com.oopisani.model.Person;
 import br.com.oopisani.repository.PersonRepository;
-import br.com.oopisani.unitetests.mapper.mocks.MockPerson;
+import br.com.oopisani.unittests.mapper.mocks.MockPerson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 

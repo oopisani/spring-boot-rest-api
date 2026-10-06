@@ -1,17 +1,16 @@
-package br.com.oopisani.services;
+package br.com.oopisani.unittests.services;
 
 import br.com.oopisani.data.dto.PersonDTO;
 import br.com.oopisani.exception.RequiredObjectIsNullException;
 import br.com.oopisani.model.Person;
 import br.com.oopisani.repository.PersonRepository;
-import br.com.oopisani.unitetests.mapper.mocks.MockPerson;
+import br.com.oopisani.unittests.mapper.mocks.MockPerson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -21,7 +20,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-    // Cria a instância da classe para teste e reutiliza
+// Cria a instância da classe para teste e reutiliza
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @ExtendWith(MockitoExtension.class)
 class PersonServicesTest {
